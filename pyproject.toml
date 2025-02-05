@@ -1,11 +1,11 @@
 [project]
 name = "peepsai"
-version = "0.100.0"
+version = "0.1.0"
 description = "Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, PeepsAI empowers agents to work together seamlessly, tackling complex tasks."
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 authors = [
-    { name = "Joao Moura", email = "joao@peepsai.com" }
+    { name = "Peeps AI", email = "contact@peepsai.io" }
 ]
 dependencies = [
     # Core Dependencies
@@ -45,7 +45,7 @@ Documentation = "https://docs.peepsai.com"
 Repository = "https://github.com/peepsAIInc/peepsAI"
 
 [project.optional-dependencies]
-tools = ["peepsai-tools>=0.32.1"]
+tools = ["peepsai-tools>=0.1.0"]
 embeddings = [
     "tiktoken~=0.7.0"
 ]
