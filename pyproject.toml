@@ -45,7 +45,6 @@ Documentation = "https://docs.peepsai.com"
 Repository = "https://github.com/peepsAIInc/peepsAI"
 
 [project.optional-dependencies]
-tools = ["peepsai-tools>=0.1.0"]
 embeddings = [
     "tiktoken~=0.7.0"
 ]
