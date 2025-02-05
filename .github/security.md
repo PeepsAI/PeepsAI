@@ -3,7 +3,7 @@ If you believe you have found a security vulnerability in any PeepsAI product or
 
  ## Reporting a Vulnerability
  Please do not report security vulnerabilities through public GitHub issues.
- To report a vulnerability, please email us at security@peepsai.com.
+ To report a vulnerability, please email us at security@peepsai.io.
  Please include the requested information listed below so that we can triage your report more quickly
 
  - Type of issue (e.g. SQL injection, cross-site scripting, etc.)

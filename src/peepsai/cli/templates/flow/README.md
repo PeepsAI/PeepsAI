@@ -1,6 +1,6 @@
 # {{peeps_name}} Peeps
 
-Welcome to the {{peeps_name}} Peeps project, powered by [peepsAI](https://peepsai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by peepsAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to the {{peeps_name}} project, powered by [Peeps AI](https://peepsai.io). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by Peeps AI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Installation
 
@@ -46,11 +46,10 @@ The {{name}} Peeps is composed of multiple AI agents, each with unique roles, go
 
 ## Support
 
-For support, questions, or feedback regarding the {{peeps_name}} Peeps or peepsAI.
+For support, questions, or feedback regarding the {{peeps_name}} Peeps or Peeps AI.
 
-- Visit our [documentation](https://docs.peepsai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/peepsai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+- Visit our [documentation](https://docs.peepsai.io)
+- Reach out to us through our [GitHub repository](https://github.com/PeepsAI/peepsai)
+- [Join our Telegram](https://t.me/peeps_ai)
 
-Let's create wonders together with the power and simplicity of peepsAI.
+Let's create wonders together with the power and simplicity of Peeps AI.

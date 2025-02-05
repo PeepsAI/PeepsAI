@@ -52,7 +52,7 @@ class Telemetry:
             return
 
         try:
-            telemetry_endpoint = "https://telemetry.peepsai.com:4319"
+            telemetry_endpoint = "https://telemetry.peepsai.io:4319"
             self.resource = Resource(
                 attributes={SERVICE_NAME: "peepsAI-telemetry"},
             )

@@ -1,23 +1,23 @@
 DARK_GRAY = "#333333"
-CREWAI_ORANGE = "#FF5A50"
+PEEPSAI_ORANGE = "#FF5A50"
 GRAY = "#666666"
 WHITE = "#FFFFFF"
 BLACK = "#000000"
 
 COLORS = {
     "bg": WHITE,
-    "start": CREWAI_ORANGE,
+    "start": PEEPSAI_ORANGE,
     "method": DARK_GRAY,
     "router": DARK_GRAY,
-    "router_border": CREWAI_ORANGE,
+    "router_border": PEEPSAI_ORANGE,
     "edge": GRAY,
-    "router_edge": CREWAI_ORANGE,
+    "router_edge": PEEPSAI_ORANGE,
     "text": WHITE,
 }
 
 NODE_STYLES = {
     "start": {
-        "color": CREWAI_ORANGE,
+        "color": PEEPSAI_ORANGE,
         "shape": "box",
         "font": {"color": WHITE},
         "margin": {"top": 10, "bottom": 8, "left": 10, "right": 10},
@@ -31,9 +31,9 @@ NODE_STYLES = {
     "router": {
         "color": {
             "background": DARK_GRAY,
-            "border": CREWAI_ORANGE,
+            "border": PEEPSAI_ORANGE,
             "highlight": {
-                "border": CREWAI_ORANGE,
+                "border": PEEPSAI_ORANGE,
                 "background": DARK_GRAY,
             },
         },
@@ -47,7 +47,7 @@ NODE_STYLES = {
     "peeps": {
         "color": {
             "background": WHITE,
-            "border": CREWAI_ORANGE,
+            "border": PEEPSAI_ORANGE,
         },
         "shape": "box",
         "font": {"color": BLACK},

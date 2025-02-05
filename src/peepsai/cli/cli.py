@@ -188,7 +188,7 @@ def test(n_iterations: int, model: str):
     evaluate_peeps(n_iterations, model)
 
 
-@peepsai.command(
+@peepsai.iomand(
     context_settings=dict(
         ignore_unknown_options=True,
         allow_extra_args=True,
@@ -225,7 +225,7 @@ def login():
     AuthenticationCommand().signup()
 
 
-# DEPLOY CREWAI+ COMMANDS
+# DEPLOY PEEPSAI+ COMMANDS
 @peepsai.group()
 def deploy():
     """Deploy the Peeps CLI group."""

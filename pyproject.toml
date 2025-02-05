@@ -1,7 +1,7 @@
 [project]
 name = "peepsai"
 version = "0.1.0"
-description = "Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, PeepsAI empowers agents to work together seamlessly, tackling complex tasks."
+description = "Peeps AI is a platform for decentralized AI agents, designed to provide individuals and communities with accessible, transparent and collaborative AI solutions."
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 authors = [
@@ -40,9 +40,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://peepsai.com"
-Documentation = "https://docs.peepsai.com"
-Repository = "https://github.com/peepsAIInc/peepsAI"
+Homepage = "https://peepsai.io"
+Documentation = "https://docs.peepsai.io"
+Repository = "https://github.com/PeepsAI/peepsai"
 
 [project.optional-dependencies]
 embeddings = [

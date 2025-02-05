@@ -13,7 +13,7 @@ class PlusAPI:
     """
 
     TOOLS_RESOURCE = "/peepsai_plus/api/v1/tools"
-    CREWS_RESOURCE = "/peepsai_plus/api/v1/peepz"
+    PEEPSS_RESOURCE = "/peepsai_plus/api/v1/peepz"
 
     def __init__(self, api_key: str) -> None:
         self.api_key = api_key
@@ -23,7 +23,7 @@ class PlusAPI:
             "User-Agent": f"PeepsAI-CLI/{get_peepsai_version()}",
             "X-Peepsai-Version": get_peepsai_version(),
         }
-        self.base_url = getenv("CREWAI_BASE_URL", "https://app.peepsai.com")
+        self.base_url = getenv("PEEPSAI_BASE_URL", "https://app.peepsai.io")
 
     def _make_request(self, method: str, endpoint: str, **kwargs) -> requests.Response:
         url = urljoin(self.base_url, endpoint)
@@ -56,44 +56,44 @@ class PlusAPI:
 
     def deploy_by_name(self, project_name: str) -> requests.Response:
         return self._make_request(
-            "POST", f"{self.CREWS_RESOURCE}/by-name/{project_name}/deploy"
+            "POST", f"{self.PEEPSS_RESOURCE}/by-name/{project_name}/deploy"
         )
 
     def deploy_by_uuid(self, uuid: str) -> requests.Response:
-        return self._make_request("POST", f"{self.CREWS_RESOURCE}/{uuid}/deploy")
+        return self._make_request("POST", f"{self.PEEPSS_RESOURCE}/{uuid}/deploy")
 
     def peeps_status_by_name(self, project_name: str) -> requests.Response:
         return self._make_request(
-            "GET", f"{self.CREWS_RESOURCE}/by-name/{project_name}/status"
+            "GET", f"{self.PEEPSS_RESOURCE}/by-name/{project_name}/status"
         )
 
     def peeps_status_by_uuid(self, uuid: str) -> requests.Response:
-        return self._make_request("GET", f"{self.CREWS_RESOURCE}/{uuid}/status")
+        return self._make_request("GET", f"{self.PEEPSS_RESOURCE}/{uuid}/status")
 
     def peeps_by_name(
         self, project_name: str, log_type: str = "deployment"
     ) -> requests.Response:
         return self._make_request(
-            "GET", f"{self.CREWS_RESOURCE}/by-name/{project_name}/logs/{log_type}"
+            "GET", f"{self.PEEPSS_RESOURCE}/by-name/{project_name}/logs/{log_type}"
         )
 
     def peeps_by_uuid(
         self, uuid: str, log_type: str = "deployment"
     ) -> requests.Response:
         return self._make_request(
-            "GET", f"{self.CREWS_RESOURCE}/{uuid}/logs/{log_type}"
+            "GET", f"{self.PEEPSS_RESOURCE}/{uuid}/logs/{log_type}"
         )
 
     def delete_peeps_by_name(self, project_name: str) -> requests.Response:
         return self._make_request(
-            "DELETE", f"{self.CREWS_RESOURCE}/by-name/{project_name}"
+            "DELETE", f"{self.PEEPSS_RESOURCE}/by-name/{project_name}"
         )
 
     def delete_peeps_by_uuid(self, uuid: str) -> requests.Response:
-        return self._make_request("DELETE", f"{self.CREWS_RESOURCE}/{uuid}")
+        return self._make_request("DELETE", f"{self.PEEPSS_RESOURCE}/{uuid}")
 
     def list_peepz(self) -> requests.Response:
-        return self._make_request("GET", self.CREWS_RESOURCE)
+        return self._make_request("GET", self.PEEPSS_RESOURCE)
 
     def create_peeps(self, payload) -> requests.Response:
-        return self._make_request("POST", self.CREWS_RESOURCE, json=payload)
+        return self._make_request("POST", self.PEEPSS_RESOURCE, json=payload)

@@ -188,7 +188,7 @@ class TestPlusAPI(unittest.TestCase):
             "POST", "/peepsai_plus/api/v1/peepz", json=payload
         )
 
-    @patch.dict(os.environ, {"CREWAI_BASE_URL": "https://custom-url.com/api"})
+    @patch.dict(os.environ, {"PEEPSAI_BASE_URL": "https://custom-url.com/api"})
     def test_custom_base_url(self):
         custom_api = PlusAPI("test_key")
         self.assertEqual(

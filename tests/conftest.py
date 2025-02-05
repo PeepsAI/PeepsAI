@@ -30,7 +30,7 @@ def setup_test_environment():
             raise RuntimeError(f"Test storage directory {storage_dir} is not writable: {e}")
         
         # Set environment variable to point to the test storage directory
-        os.environ["CREWAI_STORAGE_DIR"] = str(storage_dir)
+        os.environ["PEEPSAI_STORAGE_DIR"] = str(storage_dir)
         
         yield
         

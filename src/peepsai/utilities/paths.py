@@ -21,7 +21,7 @@ def db_storage_path() -> str:
 
 def get_project_directory_name():
     """Returns the current project directory name."""
-    project_directory_name = os.environ.get("CREWAI_STORAGE_DIR")
+    project_directory_name = os.environ.get("PEEPSAI_STORAGE_DIR")
 
     if project_directory_name:
         return project_directory_name
